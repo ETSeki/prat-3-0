@@ -351,7 +351,7 @@ do
         type = "execute",
         func = "fixAlts",
       },
-      colour = {
+--[[      colour = {
         name = PL["Colour"],
         get = function(info) return info.handler:getColour() end,
         set = function(info, nr, ng, nb, na) info.handler.db.profile.colour = { r = nr, g = ng, b = nb, a = na } end,
@@ -359,7 +359,7 @@ do
         type = "color",
         order = 60,
         disabled = function(info) return info.handler.db.profile.pncol ~= 'no' end
-      },
+      }, ]]
       pncol = {
         name = PL["Class colour"],
         desc = PL["Use class colour (from the PlayerNames module)"],
